@@ -144,6 +144,11 @@ view: orders {
     sql: ${TABLE}."SUB_CATEGORY" ;;
   }
 
+  measure: chairs_count_filter {
+    type: count
+    filters: [sub_category: "Chairs"]
+  }
+
   measure: count {
     type: count
     drill_fields: [order_id, customer_name, product_name, returns.count]
