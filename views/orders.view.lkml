@@ -61,7 +61,7 @@ view: orders {
 
   dimension: customer_name {
     type: string
-    sql: ${TABLE}."CUSTOMER_NAME" ;;
+    sql: UPPER(${TABLE}."CUSTOMER_NAME") ;;
   }
 
   dimension: discount {
