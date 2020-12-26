@@ -35,6 +35,11 @@ view: sql_runner_query {
     # sql: ${lifetime_spend};;
   }
 
+  dimension: tst {
+    # type: string
+    # sql: ${customer_id} ;;
+  }
+
   set: detail {
     fields: [customer_id, lifetime_spend]
   }
