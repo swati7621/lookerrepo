@@ -9,10 +9,7 @@ view: orders {
     sql: ${TABLE}."ORDER_ID" ;;
   }
 
-  dimension: _file {
-    type: string
-    sql: ${TABLE}."_FILE" ;;
-  }
+
 
   dimension_group: _fivetran_synced {
     type: time
