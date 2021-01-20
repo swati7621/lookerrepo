@@ -20,7 +20,7 @@ explore: people {}
 explore: returns {
   join: orders {
     type: left_outer
-    sql_on: ${returns.order_id} = ${orders.order_id} ;;
+    sql_on: ${return.order_id} = ${orders.order_id} ;;
     relationship: many_to_one
   }
 }
