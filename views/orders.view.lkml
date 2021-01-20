@@ -9,7 +9,7 @@ view: orders {
     sql: ${TABLE}."ORDER_ID" ;;
   }
 
-
+measure: test {}
 
   dimension_group: _fivetran_synced {
     type: time
