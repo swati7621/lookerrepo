@@ -8,7 +8,7 @@ view: orders {
     type: string
     sql: ${TABLE}."ORDER_ID" ;;
   }
-
+dimension: test {}
 
 
   dimension_group: _fivetran_synced {
