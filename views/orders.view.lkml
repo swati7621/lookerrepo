@@ -9,6 +9,8 @@ view: orders {
     sql: ${TABLE}."ORDER_ID" ;;
   }
 
+dimension: test_dim {}
+
 measure: test {}
 
   dimension_group: _fivetran_synced {
