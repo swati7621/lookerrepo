@@ -11,7 +11,6 @@ datagroup: ss_default_datagroup {
 
 persist_with: ss_default_datagroup
 
-explore: fivetran_audit {}
 
 explore: orders {}
 
