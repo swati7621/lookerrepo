@@ -11,6 +11,10 @@ datagroup: ss_default_datagroup {
 
 persist_with: ss_default_datagroup
 
+access_grant: can_view_financial_data {
+  user_attribute: department
+  allowed_values: [ "finance", "executive" ]
+}
 
 explore: orders {}
 
