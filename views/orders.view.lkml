@@ -1,6 +1,7 @@
 view: orders {
   sql_table_name: "PUBLIC"."ORDERS"
     ;;
+  required_access_grants: [can_view_financial_data]
   drill_fields: [order_id]
 
   dimension: order_id {
