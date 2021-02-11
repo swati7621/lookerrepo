@@ -154,6 +154,10 @@ measure: test {}
     sql: 1 ;;
   }
 
+dimension: show {
+  type: string
+  sql: ${category} ;;
+}
   measure: count {
     type: count
     drill_fields: [order_id, customer_name, product_name, returns.count]
