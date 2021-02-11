@@ -37,6 +37,16 @@ view: fivetran_audit {
     sql: CAST(${TABLE}."DONE" AS TIMESTAMP_NTZ) ;;
   }
 
+  dimension_group: interval_check {
+    type: duration
+    intervals: [
+      hour,
+      day
+    ]
+    sql_start: ${progress_date};;
+    sql_end: ${done_date} ;;
+  }
+
   dimension: message {
     type: string
     sql: ${TABLE}."MESSAGE" ;;

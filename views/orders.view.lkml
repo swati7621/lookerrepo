@@ -149,6 +149,11 @@ measure: test {}
     filters: [sub_category: "Chairs"]
   }
 
+  dimension: testdim {
+    type: number
+    sql: 1 ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [order_id, customer_name, product_name, returns.count]
