@@ -10,7 +10,7 @@ datagroup: ss_default_datagroup {
 }
 
 persist_with: ss_default_datagroup
-
+case_sensitive: yes
 access_grant: can_view_financial_data {
   user_attribute: department
   allowed_values: [ "finance", "executive" ]
@@ -27,5 +27,7 @@ explore: returns {
     relationship: many_to_one
   }
 }
+
+explore: fivetran_audit {}
 
 explore: sql_runner_query {}
