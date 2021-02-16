@@ -19,7 +19,7 @@ access_grant: can_view_financial_data {
 explore: orders {}
 
 explore: people {}
-
+label: "people label"
 explore: returns {
   join: orders {
     type: left_outer
