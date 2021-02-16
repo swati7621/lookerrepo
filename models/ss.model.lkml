@@ -21,6 +21,7 @@ explore: orders {}
 explore: people {}
 
 explore: returns {
+  label: "return explore"
   join: orders {
     type: left_outer
     sql_on: ${returns.order_id} = ${orders.order_id} ;;

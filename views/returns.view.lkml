@@ -1,4 +1,5 @@
 view: returns {
+  label: "return vview label"
   sql_table_name: "PUBLIC"."RETURNS"
     ;;
 
