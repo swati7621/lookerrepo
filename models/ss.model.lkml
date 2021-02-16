@@ -16,7 +16,9 @@ access_grant: can_view_financial_data {
   allowed_values: [ "finance", "executive" ]
 }
 
-explore: orders {}
+explore: orders {
+  label: "order label"
+}
 
 explore: people {}
 label: "people label"
