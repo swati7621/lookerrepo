@@ -17,7 +17,7 @@ access_grant: can_view_financial_data {
 }
 
 explore: orders {
-  label: "order label"
+  label: "order label advdeploy"
 }
 
 explore: people {}
