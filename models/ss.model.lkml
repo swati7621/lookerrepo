@@ -21,7 +21,6 @@ explore: orders {
 }
 
 explore: people {}
-label: "people label"
 explore: returns {
   join: orders {
     type: left_outer
