@@ -147,10 +147,10 @@ view: date_dim {
     sql: ${TABLE}."D_WEEKEND" ;;
   }
 
-  dimension: d_year {
-    type: number
-    sql: ${TABLE}."D_YEAR" ;;
-  }
+  # dimension: d_year {
+  #   type: number
+  #   sql: ${TABLE}."D_YEAR" ;;
+  # }
 
   measure: count {
     type: count

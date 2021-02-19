@@ -12,33 +12,40 @@ persist_with: first_sf_default_datagroup
 
 explore: customer {
   join: call_center {
-    type: left_outer
+    type: inner
     sql_on: 1=1 ;;
   }
 
   join: catalog_returns {
-    type: left_outer
+    type: inner
     sql_on: 1=1 ;;
   }
 
   join: date_dim {
-    type: left_outer
-    sql_on: 1=1 ;;
+    type: inner
+     sql_on: 1=1 ;;
   }
 
   join: inventory {
-    type: left_outer
+    type: inner
     sql_on: 1=1 ;;
   }
 
-  join: item {
-    type: left_outer
-    sql_on: 1=1 ;;
-  }
+  # join: item {
+  #   type: inner
+  #   sql_on: 1=1 ;;
+  # }
 
   join: catalog_sales {
-    type: left_outer
+    type: inner
     sql_on: 1=1 ;;
   }
 
+}
+
+explore: catalog_sales {
+  join: catalog_returns {
+    type: left_outer
+    sql_on: ${catalog_sales.cs_item_sk} = ${catalog_returns.cr_item_sk}  ;;
+  }
 }
