@@ -11,6 +11,7 @@ datagroup: first_sf_default_datagroup {
 persist_with: first_sf_default_datagroup
 
 explore: customer {
+  label: "Customer Data"
   join: call_center {
     type: inner
     sql_on: 1=1 ;;
